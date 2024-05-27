@@ -129,9 +129,11 @@ function circleMouseFollower(xscale, yscale){
 headingsec.forEach( function(elem) {
     var prerotate = 0;
     var diffrot = 0;
-    let minicircle = document.querySelector("#minicircle");
+    // let minicircle = document.querySelector("#minicircle");
 
     elem.addEventListener("mouseleave",(dtls)=>{
+        // console.log(document.querySelector("#minicircle").style.opacity);
+        document.querySelector("#minicircle").style.display = "flex";
         gsap.to(elem.querySelector("img"),{
             opacity : 0,
             ease : "power2",
@@ -145,22 +147,20 @@ headingsec.forEach( function(elem) {
         });
         // elem.querySelector("h1").style.translate = "0px 0px";
 
-        gsap.to(minicircle,{
-            opacity : 1,
-            height : 10,
-            width : 10
-        })
+        // gsap.to(minicircle,{
+        //     opacity : 1,
+            
+        // })
     });
 
    
 
     elem.addEventListener("mousemove",(dtls)=>{
 
-        gsap.to(minicircle,{
-            opacity : .6,
-            height : 50,
-            width : 50
-        })
+        // gsap.to(minicircle,{
+        //     opacity : 0,
+           
+        // })
 
        
        
@@ -169,6 +169,8 @@ headingsec.forEach( function(elem) {
         // }
 
         // elem.querySelector("h1").style.translate = "50px 0px";
+        // console.log("Making opacity 0");
+        document.querySelector("#minicircle").style.display = "none";
         
 
         elem.querySelectorAll(".secfade").forEach((item)=> {

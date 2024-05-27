@@ -12,12 +12,12 @@ body,html{
     
 }
 #minicircle{
-    height: 10px;
+    height: 12px;
     color: black;
     display: flex;
     align-items: center; 
     justify-content: center; 
-    width: 10px;
+    width: 12px;
     background-color: #fff;
     position: absolute;
     border-radius: 50%;

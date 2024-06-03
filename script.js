@@ -94,6 +94,9 @@ var timeout;
     document.addEventListener("mouseleave",()=>{
         document.querySelector("#minicircle").style.opacity = "0";
     });
+    // document.addEventListener("mousemove",()=>{
+    //     document.querySelector("#minicircle").style.opacity = "1";
+    // });
 
     window.addEventListener("mousemove",function(dtls){
         document.querySelector("#minicircle").style.opacity = "1";
@@ -201,6 +204,7 @@ headingsec.forEach( function(elem) {
 
     
 })
+
 
 // circleMouseFollower();
 

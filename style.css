@@ -11,6 +11,22 @@ body,html{
     
     
 }
+/* #profileimgdiv{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+} */
+#profileimg{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: gray;
+    padding: 4px;
+   
+    
+}
 #minicircle{
     height: 12px;
     color: black;
